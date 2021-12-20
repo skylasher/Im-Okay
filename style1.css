@@ -1,0 +1,70 @@
+@font-face {
+    font-family: myFont;
+    src: url(Mermaid1001.ttf);
+  }
+
+*{
+    font-family: myFont;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 20vh;
+    margin: 5px;
+}
+
+.moto{
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+}
+
+.go{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.go:hover{
+    background-color: #CBC3E3;
+    color: white;
+    width: 15vh;
+    border-radius: 30px;
+}
+
+.btn-txt1{
+    display: inline;
+}
+
+.btn-txt2{
+    font-family: sans-serif;
+    display: none;
+    letter-spacing: 1px;
+}
+
+.go:hover .btn-txt1{
+    display: none;
+}
+
+.go:hover .btn-txt2{
+    display: inline;
+}
