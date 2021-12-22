@@ -24,14 +24,71 @@ h1{
     text-align: center;
 }
 
+.footer{
+    position: absolute;
+    bottom: 4%;
+    text-align: center;
+    width: 100%;
+    font-size: x-small;
+    font-family: sans-serif;
+    letter-spacing: 0.5rem;
+    color: #ededed;
+    background-color:black;
+    left: 0;
+    padding: 0.4rem;
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+img{
+    margin: 0.2rem;
+    width: 3rem;
+}
+
 .title{
     font-size: 20vh;
     margin: 5px;
+    animation-name: title-drop;
+    animation-duration: 2s;
+}
+
+@keyframes title-drop {
+    0%{
+        opacity: 0%;
+        transform: translateY(-10%);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+    
 }
 
 .moto{
     letter-spacing: 8px;
     margin-bottom: 25px;
+    animation-name: div-fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes div-fade-in{
+    0%{
+        opacity: 0;
+    }
+    
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
 
 .go{
@@ -42,6 +99,8 @@ h1{
     border: none;
     background-color: black;
     color: white;
+    animation-name: div-fade-in;
+    animation-duration: 4s;
 }
 
 .go:hover{
