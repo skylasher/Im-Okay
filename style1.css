@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFont;
-    src: url(Mermaid1001.ttf);
+    src: url(assets/Mermaid1001.ttf);
   }
 
 *{
@@ -29,9 +29,9 @@ h1{
     bottom: 4%;
     text-align: center;
     width: 100%;
-    font-size: x-small;
+    font-size: 2vh;
     font-family: sans-serif;
-    letter-spacing: 0.5rem;
+    letter-spacing: 1vh;
     color: #ededed;
     background-color:black;
     left: 0;
@@ -52,7 +52,7 @@ img{
 
 .title{
     font-size: 20vh;
-    margin: 5px;
+    margin: 0px;
     animation-name: title-drop;
     animation-duration: 2s;
 }
@@ -71,7 +71,9 @@ img{
 }
 
 .moto{
-    letter-spacing: 8px;
+    font-size: 3vh;
+    margin-top: 1vh;
+    letter-spacing: 1vh;
     margin-bottom: 25px;
     animation-name: div-fade-in;
     animation-duration: 3s;
@@ -112,12 +114,14 @@ img{
 
 .btn-txt1{
     display: inline;
+    font-size: 3vh;
 }
 
 .btn-txt2{
+    font-size: 2.5vh;
     font-family: sans-serif;
     display: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.2vh;
 }
 
 .go:hover .btn-txt1{
