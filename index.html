@@ -7,19 +7,28 @@
     <title>I'm Okay</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="assets/favicon.png">
+    <script>
+        var audio = new Audio("assets/click1.wav");
+        
+        document.onclick = function() {
+            audio.play()}
+
+        function play_click(){
+            audio.play()
+        }
+        
+        var audio1=new Audio("assets/bg.mp3");
+        
+        window.onload=function(){
+            audio1.play()}
+    </script>
+    
 </head>
 <body>
 <!-- 
     <nav class="nav-bar">
         <img src="help.png" class="help-logo" alt="help">
     </nav> -->
-
-    <audio src="assets/bg.mp3" id="bg_audio" loop="loop"></audio>
-    <script type="text/javascript">
-        window.onload=function(){
-            document.getElementById("bg_audio").play();
-        }
-    </script>
 
     <div class="main">
         <div class="title">
@@ -29,10 +38,12 @@
             End the stigma. Know how you feel.
         </div>
         <div class="btn1">
-            <button class="go">
-                <span class="btn-txt1">></span>
-                <span class="btn-txt2">Breathe</span>
-            </button>
+            <a href="page1.html" target="_parent">
+                <button class="go" onmouseover="play_click();">
+                    <span class="btn-txt1">></span>
+                    <span class="btn-txt2">Breathe</span>
+                </button>
+            </a>
         </div>
     </div>
 
